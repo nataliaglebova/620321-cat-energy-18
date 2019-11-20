@@ -1,4 +1,6 @@
 .product {
+  display: flex;
+  flex-wrap: wrap;
   width: 320px;
   padding-left: 20px;
   padding-bottom: 25px;
@@ -8,6 +10,7 @@
 .product__name {
   text-transform: uppercase;
   .oswald-regular-font(normal,16px, @black);
+  width: 75px;
   margin-top: 25px;
 }
 
@@ -16,7 +19,12 @@
   font-size: 12px;
   line-height: 1.33;
   color: @grey;
-  width: 142px;
+  width: 140px;
+  border-collapse: collapse;
+}
+
+.product__value {
+  padding-left: 50px;
 }
 
 .product__image {
@@ -24,7 +32,8 @@
   height: 144px;
 }
 
-.product__order {
+.button--order {
   width: 280px;
   margin-left: 0;
+  font-size: 16px;
 }

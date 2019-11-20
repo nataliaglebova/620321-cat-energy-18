@@ -1,0 +1,62 @@
+.example {
+  background-color: @light-grey;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__header {
+  .blocks-header-font();
+  margin-left: 0;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: @grey;
+  padding-right: 34px;
+  margin-bottom: 27px;
+}
+
+.example__indicators {
+  display: inline-block;
+  position: relative;
+  width: 124px;
+  border: 1px solid @ligt-grey-line;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.example__indicators + .example__indicators {
+  margin-left: 20px;
+}
+
+.example__parameter {
+  .oswald-regular-font(normal, 24px, @black);
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 18px;
+}
+
+.example__parameter-about {
+  width: 87px;
+  padding-left: 16px;
+  padding-right: 17px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: @grey;
+  background-color: @light-grey;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.example__sum {
+  text-transform: uppercase;
+  .oswald-regular-font(normal, 14px, @black);
+  text-align: center;
+}
