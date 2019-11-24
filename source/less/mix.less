@@ -15,7 +15,7 @@
 @grey:#444444;
 @leaf:#68b738;
 @light-grey:#f2f2f2;
-@ligt-grey-line:rgba(68, 68, 68, 0.1);
+@ligt-grey-line: #cdcdcd;
 
 .visually-hidden {
   position: absolute;
@@ -52,9 +52,15 @@
 
 .blocks-header-font() {
   .oswald-regular-font(normal, 36px, @black);
-  line-height: 1.67;
+  line-height: 60px;
   text-align: left;
-  margin-left: 22px;
+  padding-left: 22px;
   margin-top: 0;
   margin-bottom: 41px;
+}
+
+.fielset-reset() {
+  border: none;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @ligt-grey-line;
 }

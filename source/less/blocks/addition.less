@@ -1,0 +1,37 @@
+.addition {
+  border-bottom: 1px solid @ligt-grey-line;
+  padding-bottom: 25px;
+}
+
+.addition__header {
+  .oswald-regular-font(normal, 16px, @black);
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 83px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 25px;
+    left: 150px;
+  }
+}
+
+.addition__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: @grey;
+}
+
+.addition__button {
+  width: 280px;
+}
