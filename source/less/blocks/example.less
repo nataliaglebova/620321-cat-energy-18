@@ -2,6 +2,8 @@
   background-color: @light-grey;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 38px;
+  position: relative;
 }
 
 .example__header {
@@ -26,10 +28,10 @@
   border-radius: 3px;
   text-align: center;
   margin-bottom: 38px;
-}
 
-.example__indicators + .example__indicators {
-  margin-left: 20px;
+  & + .example__indicators {
+    margin-left: 20px;
+  }
 }
 
 .example__parameter {
@@ -59,4 +61,32 @@
   text-transform: uppercase;
   .oswald-regular-font(normal, 14px, @black);
   text-align: center;
+}
+
+.example_image--below {
+  position: absolute;
+  top: 400px;
+  z-index: -1;
+}
+
+.example__line {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid @ligt-grey-line;
+  background-color: @white;
+}
+
+.example__label {
+  .oswald-regular-font(normal, 16px, @black);
+  text-transform: uppercase;
+}
+
+.example__progress-line {
+  width: 35px;
+  height: 6px;
+  background-color: @leaf;
+  border-radius: 3px;
+  margin-top: 4px;
+  margin-left: 6px;
 }
