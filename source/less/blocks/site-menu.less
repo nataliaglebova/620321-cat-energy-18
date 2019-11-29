@@ -1,18 +1,49 @@
 .site-menu {
   .oswald-medium-font(500, 20px, @white);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+    width: 470px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 109px;
+    justify-content: space-between;
+    margin-right: 90px;
+  }
 }
 
 .site-menu__item {
   display: block;
-  padding: 24px 124px;
+  padding-top: 15px;
+  padding-bottom: 24px;
   border-style: solid;
   border-width: 1px;
   border-color: #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .site-menu__link {
   text-decoration: none;
-  color: @white;
+  color: @black;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
 }
