@@ -1,8 +1,13 @@
 .site-navigation__menu-list {
-  /*visibility: hidden;*/
-  /*position: absolute;*/
+  visibility: hidden;
+  position: absolute;
   left: 0;
   list-style-type: none;
   padding-left: 0;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    visibility: visible;
+    position: static;
+  }
 }

@@ -1,15 +1,42 @@
 .advantages {
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 90px;
+  }
 }
 
 .advantages__header {
   .blocks-header-font();
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin-top: 0;
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .advantages__item {
@@ -21,7 +48,36 @@
   color: @grey;
   padding-left: 100px;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    padding-left: 0;
+    padding-right: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 48px;
+  }
 }
+
+/*примесь для фоновой цифры будет добавлено позже
+.advantage-back-number(@class) {
+  @class::after{
+  }
+}*/
+
+.advantages-text {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 117px;
+  }
+}
+
 .advantages-icons(@url) {
   content: "";
   position: absolute;
@@ -35,18 +91,51 @@
   top: -5px;
 }
 
+.advantages-icons-tablet(@url) {
+  content: "";
+  position: absolute;
+  background-color: @leaf;
+  width: 80px;
+  height: 80px;
+  background-image: @url;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 20px;
+  top: -5px;
+}
+
 .advantages__item--leaf::before {
   .advantages-icons(url("../img/advantage-leaf@1x.png"));
+
+  @media (min-width: @tablet-width) {
+    .advantages-icons-tablet(url("../img/advantage-leaf@1x.png"));
+    left: 0;
+  }
 }
 
 .advantages__item--powder::before {
   .advantages-icons(url("../img/advantage-powder@1x.png"));
+
+  @media (min-width: @tablet-width) {
+    .advantages-icons-tablet(url("../img/advantage-powder@1x.png"));
+    left: 0;
+  }
 }
 
 .advantages__item--cutlery::before {
   .advantages-icons(url("../img/advantage-dining@1x.png"));
+
+  @media (min-width: @tablet-width) {
+    .advantages-icons-tablet(url("../img/advantage-dining@1x.png"));
+    left: 0;
+  }
 }
 
 .advantages__item--weigher::before {
   .advantages-icons(url("../img/advantage-clock@1x.png"));
+
+  @media (min-width: @tablet-width) {
+    .advantages-icons-tablet(url("../img/advantage-clock@1x.png"));
+    left: 0;
+  }
 }

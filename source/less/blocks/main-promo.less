@@ -3,6 +3,25 @@
   background-repeat: no-repeat;
   width: 320px;
   padding-top: 29px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-image: none;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 720px 696px;
+    margin-top: -140px;
+    padding-top: 226px;
+    padding-bottom: 113px;
+    z-index: 0;
+  }
 }
 
 .main-promo__description {
@@ -11,6 +30,18 @@
   letter-spacing: normal;
   text-align: center;
   margin: 0 auto 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 410px;
+    text-align: left;
+    color: @black;
+    font-size: 60px;
+    margin-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 830px;
+  }
 }
 
 .main-promo__slogan {
@@ -20,4 +51,53 @@
   letter-spacing: normal;
   text-align: center;
   margin: 0 auto 29px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    width: 285px;
+    font-size: 14px;
+    color: @black;
+    margin-left: 120px;
+    align-self: baseline;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 830px;
+    font-size: 20px;
+    margin-bottom: 53px;
+  }
+}
+
+.main-promo__product {
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+    top: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 500px;
+    left: 500px;
+    top: 120px;
+  }
+}
+
+.main-promo__form-link {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    margin-left: 120px;
+    z-index: 1;
+    margin-bottom: 530px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 188px;
+  }
 }

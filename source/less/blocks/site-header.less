@@ -8,11 +8,13 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
     border: none;
+    z-index: 2;
   }
 }
 
@@ -53,10 +55,11 @@
   width: 20px;
   /*временно для верстки*/
   height: 40px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-right: 20px;
+  margin-left: 55px;
 
   @media (min-width: @tablet-width) {
-    visibility: hidden;
+    display: none;
   }
 }
