@@ -2,4 +2,19 @@
   list-style-type: none;
   margin-top: 0;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+    justify-content: space-between;
+  }
 }

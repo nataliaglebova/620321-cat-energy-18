@@ -12,6 +12,10 @@
     padding-top: 64px;
     padding-bottom: 62px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .site-footer__logo-text {
@@ -46,6 +50,7 @@
   @media (min-width: @tablet-width) {
     width: 165px;
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -58,6 +63,10 @@
   line-height: 1;
   text-align: left;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .site-footer__copyright-logo {
@@ -67,4 +76,8 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   filter: grayscale(100%) opacity(75%);
+
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
+  }
 }
