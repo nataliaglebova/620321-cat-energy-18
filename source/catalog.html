@@ -12,21 +12,21 @@
         <a>
           <img src="img/logo-mobile.svg" alt="CATENERGY" class="site-header__logo">
         </a>
+        <button class="site-header__menu-spoiler">
+          <span class="visually-hidden">МЕНЮ</span>
+        </button>
         <nav class="site-header__navigation site-navigation">
-            <button class="site-navigation__menu-spoiler ">
-              <span class="visually-hidden">МЕНЮ</span>
-            </button>
-            <ul class="site-navigation__menu-list site-menu">
-              <li class="site-menu__item">
-                <a href="index.html" class="site-menu__link">Главная</a>
-              </li>
-              <li class="site-menu__item">
-                <a href="catalog.html" class="site-menu__link">Каталог продукции</a>
-              </li>
-              <li class="site-menu__item">
-                <a href="form.html" class="site-menu__link">Подбор программы</a>
-              </li>
-            </ul>
+          <ul class="site-navigation__menu-list site-menu">
+            <li class="site-menu__item">
+              <a href="index.html" class="site-menu__link site-menu__link--inner">Главная</a>
+            </li>
+            <li class="site-menu__item">
+                <a href="catalog.html" class="site-menu__link site-menu__link--inner">Каталог продукции</a>
+            </li>
+            <li class="site-menu__item">
+                <a href="form.html" class="site-menu__link site-menu__link--inner">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
@@ -195,12 +195,14 @@
                 <button type="button" name="button" class="button button--order">Заказать</button>
               </div>
             </li>
+            <li>
+              <div class="catalog__item addition">
+                <p class="addition__header">Показать еще 100500 товаров</p>
+                <p class="addition__text">На самом деле вкусов гораздо больше!</p>
+                <button type="button" name="button" class="addition__button button button--grey">Показать все</button>
+              </div>
+            </li>
           </ul>
-          <div class="catalog__extension addition">
-            <p class="addition__header">Показать еще 100500 товаров</p>
-            <p class="addition__text">На самом деле вкусов гораздо больше!</p>
-            <button type="button" name="button" class="addition__button button button--grey">Показать все</button>
-          </div>
         </section>
         <section class="additional-goods">
           <h2 class="additional-goods__header">Дополнительные товары</h2>
@@ -227,8 +229,10 @@
         </section>
         <section class="contacts contacts--grey">
           <h2 class="visually-hidden">Контакная информация</h2>
-          <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts-wrap">
+            <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <div class="contacts__map">
             <img src="img/bg-map-mobile@1x.png" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </div>

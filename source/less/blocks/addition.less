@@ -1,6 +1,11 @@
 .addition {
   border-bottom: 1px solid @ligt-grey-line;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 140px;
+    width: 324px;
+  }
 }
 
 .addition__header {
@@ -22,6 +27,10 @@
     top: 25px;
     left: 150px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 166px;
+  }
 }
 
 .addition__text {
@@ -34,4 +43,10 @@
 
 .addition__button {
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+    margin-bottom: 35px;
+    margin-top: 80px;
+  }
 }
