@@ -1,7 +1,17 @@
+.program-selection__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .program-selection__header {
   .blocks-header-font();
   padding-top: 20px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    padding-left: 32px;
+  }
 }
 
 .program-selection__text {
@@ -10,4 +20,10 @@
   padding-right: 70px;
   padding-left: 20px;
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-left: 70px;
+    margin-right: 300px;
+  }
 }

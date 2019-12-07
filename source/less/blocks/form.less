@@ -2,12 +2,34 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 635px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form {
   width: 320px;
   padding-left: 20px;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 634px;
+    padding-right: 67px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__label {
@@ -15,6 +37,10 @@
   .oswald-regular-font(normal, 16px, @black);
   margin-right: 15px;
   padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__cat-info {
@@ -43,10 +69,17 @@
   .fielset-reset();
 }
 
-.owner-contact {
+.form__owner-contact {
   border: none;
   padding-bottom: 23px;
   border-bottom: 1px solid @ligt-grey-line;
+
+  & .form__list {
+    @media (min-width: @desktop-width) {
+      flex-wrap: nowrap;
+      width: 1220px;
+    }
+  }
 }
 
 .form__header {
@@ -54,10 +87,24 @@
   padding-right: 110px;
   padding-top: 30px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
 }
 
 .form__comments {
   .fielset-reset();
+}
+
+.form__comments .form__text-input {
+  @media (min-width: @tablet-width) {
+    width: 615px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__add {
@@ -76,8 +123,45 @@
 .form__button {
   width: 280px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__list li {
   display: flex;
+  width: 100%;
+}
+
+.form__list--radio {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @ligt-grey-line;
+  }
+}
+
+.form__list--checkbox {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @ligt-grey-line;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    border: none;
+  }
+
+  & li {
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 25%;
+    }
+  }
 }
