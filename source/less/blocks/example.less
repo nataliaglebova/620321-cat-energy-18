@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: @light-grey;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
+  padding-bottom: 22px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -24,8 +22,11 @@
 
 .example__header {
   .blocks-header-font();
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: 0;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: @desktop-width) {
     font-size: 60px;
@@ -39,8 +40,10 @@
   font-size: 14px;
   line-height: 1.29;
   color: @grey;
-  padding-right: 34px;
-  margin-bottom: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 26px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -63,6 +66,7 @@
   border-radius: 3px;
   text-align: center;
   margin-bottom: 38px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 162px;
@@ -70,7 +74,7 @@
 
 
   & + .example__indicators {
-    margin-left: 20px;
+    margin-left: 28px;
 
     @media (min-width: @desktop-width) {
       margin-right: 800px;
@@ -81,8 +85,8 @@
 .example__parameter {
   .oswald-regular-font(normal, 24px, @black);
   text-transform: uppercase;
-  margin-top: 17px;
-  margin-bottom: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -93,8 +97,6 @@
 
 .example__parameter-about {
   width: 87px;
-  padding-left: 16px;
-  padding-right: 17px;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -105,6 +107,9 @@
   position: absolute;
   top: 40px;
   left: 15px;
+  padding-left: 16px;
+  padding-right: 17px;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -125,7 +130,12 @@
 .example__sum {
   text-transform: uppercase;
   .oswald-regular-font(normal, 14px, @black);
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -147,6 +157,7 @@
 .example__image--up {
   /*clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);*/
   z-index: 0;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
@@ -174,8 +185,10 @@
 
 .example__scale {
   display: flex;
-  width: 320px;
-  justify-content: space-around;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     /*временно*/
@@ -209,6 +222,8 @@
 .example__label {
   .oswald-regular-font(normal, 16px, @black);
   text-transform: uppercase;
+  /*padding-left: 10px;
+  padding-right: 17px;*/
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
