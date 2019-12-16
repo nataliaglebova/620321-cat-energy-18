@@ -2,9 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
+  box-sizing: border-box;
   padding-left: 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid @ligt-grey-line;
+  padding-bottom: 23px;
+  border: 1px solid @ligt-grey-line;
+  border-bottom: none;
 
   @media (min-width: @tablet-width) {
     margin-top: 140px;
@@ -27,7 +29,7 @@
   text-transform: uppercase;
   .oswald-regular-font(normal,16px, @black);
   width: 75px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .product__properties {
@@ -40,7 +42,7 @@
 }
 
 .product__value {
-  padding-left: 50px;
+  text-align: right;
 }
 
 .product__image {

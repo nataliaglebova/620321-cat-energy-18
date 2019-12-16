@@ -3,8 +3,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 20px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid @light-grey;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -20,9 +18,11 @@
   .oswald-regular-font(normal,24px, @black);
   line-height: 1;
   position: relative;
-  padding-right: 70px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  padding-right: 74px;
+  padding-bottom: 35px;
   margin-bottom: 0;
+  border-bottom: 1px solid @light-grey;
 
   &::after {
     content: "";
@@ -59,7 +59,8 @@
 .additional-goods__item {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid @light-grey;
+  border-bottom: 1px solid @light-grey;
+  margin-right: 20px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @light-grey;
@@ -82,11 +83,11 @@
 
 .additional-goods__name {
   text-transform: uppercase;
-  .oswald-regular-font(normal,16px, #222222);
+  .oswald-regular-font(normal, 16px, #222222);
   width: 280px;
-  padding-top: 14px;
+  padding-top: 12px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -109,6 +110,7 @@
   color: @grey;
   margin-top: 0;
   margin-bottom: 14px;
+  flex-grow: 1;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -129,7 +131,6 @@
   line-height: 1;
   color: @grey;
   margin-top: 0;
-  margin-right: 20px;
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
@@ -146,6 +147,7 @@
 
   & + .button {
     margin-bottom: 17px;
+    margin-right: 0;
 
     @media (min-width: @tablet-width) {
       width: 100%;
