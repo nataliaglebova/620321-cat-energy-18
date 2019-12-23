@@ -4,13 +4,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 635px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 570px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -18,13 +12,15 @@
 
 .form {
   width: 320px;
-  padding-left: 20px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 634px;
+    /*width: 634px;
     padding-right: 67px;
-    padding-left: 70px;
+    padding-left: 70px;*/
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,19 +31,49 @@
 .form__label {
   text-transform: uppercase;
   .oswald-regular-font(normal, 16px, @black);
-  margin-right: 15px;
+  margin-right: 13px;
   padding-top: 15px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
   }
 }
 
+.form__label--radio::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @ligt-grey-line;
+  border-radius: 50%;
+  top: 3px;
+  left: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 28px;
+    top: 0;
+  }
+}
+
 .form__cat-info {
+  padding-left: 20px;
+  padding-top: 0;
+  width: 87.5%;
   border: none;
-  padding: 0;
-  padding-bottom: 23px;
-  border-bottom: 1px solid @ligt-grey-line;
+  padding-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 54px;
+  }
 }
 
 .form__text-input {
@@ -55,24 +81,68 @@
   text-transform: uppercase;
   border: 1px solid @ligt-grey-line;
   padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   margin-bottom: 14px;
   flex-grow: 1;
 
   &::placeholder {
     color: @grey;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-left: 5px;
+    margin-right: 2px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__type {
   .fielset-reset();
+  width: 100%;
+  border: 1px solid @ligt-grey-line;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+  }
+
+  & .form__label {
+    padding-top: 10px;
+    padding-left: 65px;
+    margin-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 0;
+      padding-left: 90px;
+      margin-top: 22px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form__owner-contact {
   border: none;
-  padding-bottom: 23px;
-  border-bottom: 1px solid @ligt-grey-line;
+  padding-bottom: 11px;
+  padding-left: 18px;
+  padding-right: 20px;
+  margin-right: 0;
+  margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
 
   & .form__list {
     @media (min-width: @desktop-width) {
@@ -84,22 +154,35 @@
 
 .form__header {
   .oswald-regular-font(normal, 24px, @black);
-  padding-right: 110px;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
+    margin-bottom: 68px;
   }
 }
 
 .form__comments {
   .fielset-reset();
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .form__comments .form__text-input {
   @media (min-width: @tablet-width) {
-    width: 615px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 175px;
   }
 
   @media (min-width: @desktop-width) {
@@ -109,7 +192,45 @@
 
 .form__add {
   .fielset-reset();
+  padding-left: 20px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.form__add .form__header {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.form__label--check {
+  padding-top: 15px;
+  padding-left: 45px;
+  margin-bottom: 10px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+    padding-left: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @ligt-grey-line;
+    top: 10px;
+    left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .form__notification {
@@ -118,15 +239,31 @@
   line-height: 1.14;
   text-align: center;
   color: @grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }
 
 .form__button {
-  width: 280px;
-  margin: 0;
+  width: 87.5%;
+  margin-left: 20px;
+  font-size: 16px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
     margin-right: 61px;
+    margin-left: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    width: 45%;
   }
 
   @media (min-width: @desktop-width) {
@@ -139,15 +276,11 @@
   width: 100%;
 }
 
-.form__list--radio {
-  @media (min-width: @tablet-width) {
-    border: 1px solid @ligt-grey-line;
-  }
-}
-
 .form__list--checkbox {
+  margin-bottom: 30px;
+
   @media (min-width: @tablet-width) {
-    border: 1px solid @ligt-grey-line;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -157,7 +290,7 @@
 
   & li {
     @media (min-width: @tablet-width) {
-      width: 50%;
+      width: 45%;
     }
 
     @media (min-width: @desktop-width) {

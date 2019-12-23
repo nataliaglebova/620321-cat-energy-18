@@ -1,11 +1,16 @@
 .addition {
-  border-bottom: 1px solid @ligt-grey-line;
+  border: 1px solid @ligt-grey-line;
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin-top: 140px;
     width: 324px;
     border: 1px solid @ligt-grey-line;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
   }
 }
 
@@ -14,7 +19,7 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  padding-top: 83px;
+  padding-top: 80px;
   margin: 0;
 
   &::before {
@@ -26,11 +31,39 @@
     background-repeat: no-repeat;
     opacity: 0.2;
     top: 25px;
-    left: 150px;
+    left: 143px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-plus.svg");
+      width: 61px;
+      height: 61px;
+      top: 50px;
+      left: 135px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 35px;
+      top: 55px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 166px;
+    padding-top: 160px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 55%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1;
   }
 }
 
@@ -40,14 +73,41 @@
   line-height: 1.33;
   text-align: center;
   color: @grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding-left: 70px;
+    text-align: center;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 68%;
+    margin-bottom: 85px;
+  }
 }
 
 .addition__button {
-  width: 280px;
+  width: 278px;
+  font-size: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 249px;
-    margin-bottom: 35px;
+    width: 77%;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 80px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+    margin-top: 0;
   }
 }
