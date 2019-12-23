@@ -12,7 +12,7 @@
     width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 90px;
+    margin-bottom: 260px;
   }
 }
 
@@ -25,6 +25,10 @@
     font-size: 60px;
     margin-bottom: 75px;
     padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
   }
 }
 
@@ -64,10 +68,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 20%;
     padding: 0;
     margin: 0;
     font-size: 16px;
-    padding-bottom: 48px;
   }
 }
 
@@ -75,6 +79,10 @@
 .advantages__item:nth-child(4) {
   @media (min-width: @tablet-width) {
     margin-bottom: 114px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -93,7 +101,14 @@
     font-size: 16px;
     padding-right: 100px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    line-height: 1.5;
+    margin-top: 108px;
+  }
 }
+
 /*mixins*/
 .advantages-icons(@url) {
   content: "";

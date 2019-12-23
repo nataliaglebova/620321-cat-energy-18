@@ -1,6 +1,5 @@
 .button {
   display: block;
-  /*width: auto;*/
   background-color: @leaf;
   .oswald-regular-font(normal, 14px, @white);
   line-height: 1.29;
@@ -13,8 +12,31 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
   &--grey {
     background-color: @light-grey;
     color: @grey;
+  }
+}
+
+
+.button--order {
+  width: 280px;
+  margin-left: 0;
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 1.25;
+    width: 77%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 68.97%;
+    margin: auto;
   }
 }

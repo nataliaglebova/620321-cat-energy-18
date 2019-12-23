@@ -10,6 +10,11 @@
     padding: 0;
     margin: 0;
     border: none;
+    width: 16%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 126px;
   }
 }
 
@@ -26,6 +31,13 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -44,16 +56,32 @@
   width: 25px;
   height: 15px;
   background-image: url("../img/icon-vk.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 31px;
+    height: 20px;
+  }
 }
+
 
 .social-networks__link--instagram {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-insta.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 23px;
+  }
 }
 
 .social-networks__link--fb {
   width: 10px;
   height: 20px;
   background-image: url("../img/icon-fb.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
 }

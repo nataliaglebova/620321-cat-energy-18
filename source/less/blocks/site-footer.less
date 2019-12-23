@@ -5,16 +5,21 @@
   width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    box-sizing: border-box;
+    width: 100%;
     margin: 0;
     align-items: baseline;
-    justify-content: space-around;
-    padding-top: 64px;
+    justify-content: space-between;
+    padding-top: 50px;
     padding-bottom: 62px;
+    padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+    padding-left: 108px;
+    padding-top: 45px;
+    padding-right: 80px;
   }
 }
 
@@ -26,6 +31,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    width: 132px;
   }
 }
 
@@ -39,6 +45,7 @@
     width: 130px;
     margin: 0;
     border: none;
+    align-self: flex-end;
   }
 }
 
@@ -51,7 +58,7 @@
   margin-right: 15px;
 
   @media (min-width: @tablet-width) {
-    width: 165px;
+    width: 192px;
     padding: 0;
     margin: 0;
   }
@@ -82,6 +89,7 @@
   filter: grayscale(100%) opacity(75%);
 
   @media (min-width: @tablet-width) {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 0;
   }
 }

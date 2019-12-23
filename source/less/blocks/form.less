@@ -4,13 +4,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 635px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 570px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -21,9 +15,12 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 634px;
+    /*width: 634px;
     padding-right: 67px;
-    padding-left: 70px;
+    padding-left: 70px;*/
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,6 +49,13 @@
   border-radius: 50%;
   top: 3px;
   left: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 28px;
+    top: 0;
+  }
 }
 
 .form__cat-info {
@@ -62,6 +66,14 @@
   padding-bottom: 8px;
   margin-left: 0;
   margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 54px;
+  }
 }
 
 .form__text-input {
@@ -77,6 +89,15 @@
   &::placeholder {
     color: @grey;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-left: 5px;
+    margin-right: 2px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__type {
@@ -87,13 +108,25 @@
   padding-top: 15px;
   margin-bottom: 27px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+  }
+
   & .form__label {
     padding-top: 10px;
     padding-left: 65px;
     margin-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 0;
+      padding-left: 90px;
+      margin-top: 22px;
+      margin-bottom: 0;
+    }
   }
 }
-
 
 .form__owner-contact {
   border: none;
@@ -102,6 +135,14 @@
   padding-right: 20px;
   margin-right: 0;
   margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
 
   & .form__list {
     @media (min-width: @desktop-width) {
@@ -117,17 +158,31 @@
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
+    margin-bottom: 68px;
   }
 }
 
 .form__comments {
   .fielset-reset();
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .form__comments .form__text-input {
   @media (min-width: @tablet-width) {
-    width: 615px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 175px;
   }
 
   @media (min-width: @desktop-width) {
@@ -139,6 +194,16 @@
   .fielset-reset();
   padding-left: 20px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.form__add .form__header {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .form__label--check {
@@ -146,6 +211,11 @@
   padding-left: 45px;
   margin-bottom: 10px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+    padding-left: 60px;
+  }
 
   &::before {
     content: "";
@@ -155,6 +225,11 @@
     border: 1px solid @ligt-grey-line;
     top: 10px;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -168,6 +243,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }
 
 .form__button {
@@ -178,6 +259,11 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
     margin-right: 61px;
+    margin-left: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    width: 45%;
   }
 
   @media (min-width: @desktop-width) {
@@ -190,17 +276,11 @@
   width: 100%;
 }
 
-.form__list--radio {
-  @media (min-width: @tablet-width) {
-    border: 1px solid @ligt-grey-line;
-  }
-}
-
 .form__list--checkbox {
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    border: 1px solid @ligt-grey-line;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -210,7 +290,7 @@
 
   & li {
     @media (min-width: @tablet-width) {
-      width: 50%;
+      width: 45%;
     }
 
     @media (min-width: @desktop-width) {

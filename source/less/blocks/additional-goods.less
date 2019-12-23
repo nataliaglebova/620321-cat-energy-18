@@ -7,10 +7,12 @@
   @media (min-width: @tablet-width) {
     border: none;
     margin-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 112px;
+    padding-left: 110px;
+    margin-bottom: 87px;
   }
 }
 
@@ -24,6 +26,21 @@
   margin-bottom: 0;
   border-bottom: 1px solid @light-grey;
 
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    width: 100%;
+    padding-left: 37px;
+    border: none;
+    margin-bottom: 43px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+
   &::after {
     content: "";
     background-color: @leaf;
@@ -34,25 +51,20 @@
     right: 0;
 
     @media (min-width: @tablet-width) {
+      margin-top: 60px;
       width: 328px;
-      top: 20px;
+      top: -30px;
     }
   }
 
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    width: 100%;
-    padding-left: 47px;
-
-    &::before {
-      content: "";
-      background-color: @leaf;
-      width: 20px;
-      height: 3px;
-      position: absolute;
-      top: 20px;
-      left: -10px;
-    }
+  &::before {
+    content: "";
+    background-color: @leaf;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
   }
 }
 
@@ -65,19 +77,19 @@
   @media (min-width: @tablet-width) {
     border: 1px solid @light-grey;
     width: 895px;
-    padding: 28px 38px;
+    padding: 25px 38px;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     border-left: none;
     border-right: none;
     flex-wrap: nowrap;
-    margin-right: 435px;
     padding-left: 0;
     padding-right: 0;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 }
 
@@ -92,11 +104,12 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     flex-grow: 2;
   }
 
   @media (min-width: @desktop-width) {
+    width: 36.31%;
     flex-grow: 0;
     margin-bottom: 0;
     padding-top: 9px;
@@ -116,11 +129,12 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    flex-grow: 1;
+    text-align: center;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 9px;
+    align-self: center;
     flex-grow: 0;
   }
 }
@@ -136,13 +150,14 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
+    padding-top: 5px;
     font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
     flex-grow: 1;
     text-align: right;
-    padding-top: 9px;
+    align-self: center;
   }
 
   & + .button {
