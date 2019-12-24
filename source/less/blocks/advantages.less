@@ -86,12 +86,6 @@
   }
 }
 
-/*примесь для фоновой цифры будет добавлено позже
-.advantage-back-number(@class) {
-  @class::after{
-  }
-}*/
-
 .advantages__text {
   margin: 0;
   padding: 0;
@@ -132,12 +126,12 @@
   background-image: @url;
   background-position: center;
   background-repeat: no-repeat;
-  left: 20px;
-  top: -5px;
 }
 
 .advantages__item--leaf::before {
   .advantages-icons(url("../img/advantage-leaf@1x.png"));
+  left: 20px;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-leaf@1x.png"));
@@ -147,6 +141,8 @@
 
 .advantages__item--powder::before {
   .advantages-icons(url("../img/advantage-powder@1x.png"));
+  left: 20px;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-powder@1x.png"));
@@ -156,6 +152,8 @@
 
 .advantages__item--cutlery::before {
   .advantages-icons(url("../img/advantage-dining@1x.png"));
+  left: 20px;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-dining@1x.png"));
@@ -165,6 +163,8 @@
 
 .advantages__item--weigher::before {
   .advantages-icons(url("../img/advantage-clock@1x.png"));
+  left: 20px;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-clock@1x.png"));
