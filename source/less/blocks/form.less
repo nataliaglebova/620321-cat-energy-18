@@ -15,16 +15,13 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    /*width: 634px;
-    padding-right: 67px;
-    padding-left: 70px;*/
     width: 82%;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 84.73%;
   }
 }
 
@@ -74,6 +71,11 @@
     padding-bottom: 0;
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 46.8%;
+    margin-bottom: 45px;
+  }
 }
 
 .form__text-input {
@@ -114,6 +116,12 @@
     margin-bottom: 70px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 46.8%;
+    margin-left: auto;
+    margin-bottom: 65px;
+  }
+
   & .form__label {
     padding-top: 10px;
     padding-left: 65px;
@@ -144,10 +152,15 @@
     margin-bottom: 40px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
+
   & .form__list {
     @media (min-width: @desktop-width) {
       flex-wrap: nowrap;
       width: 1220px;
+      justify-content: space-between;
     }
   }
 }
@@ -267,13 +280,21 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 568px;
+    width: 46.55%;
+    margin-right: 85px;
+    margin-bottom: 83px;
   }
 }
 
 .form__list li {
   display: flex;
   width: 100%;
+}
+
+.form__owner-contact li {
+  @media (min-width: @desktop-width) {
+    width: 46.72%;
+  }
 }
 
 .form__list--checkbox {
@@ -286,6 +307,7 @@
   @media (min-width: @desktop-width) {
     width: 1220px;
     border: none;
+    margin-bottom: 35px;
   }
 
   & li {
@@ -294,7 +316,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 25%;
+      width: 20.08%;
     }
   }
 }
