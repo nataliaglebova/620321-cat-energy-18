@@ -5,6 +5,11 @@
   padding-top: 29px;
   margin: 0 auto;
 
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     position: relative;
     padding-top: 35px;
@@ -22,6 +27,11 @@
     padding-top: 221px;
     padding-bottom: 80px;
     z-index: 0;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px 696px;
+    }
   }
 }
 
