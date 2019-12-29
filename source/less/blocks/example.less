@@ -210,9 +210,19 @@
 
 .example_image--below {
   position: absolute;
-  top: 420px;
-  left: 25px;
+  top: -37%;
+  right: 70px;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    top: 42%;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -35%;
+    right: 5%;
+  }
 }
 
 .example__scale {
