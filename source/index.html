@@ -40,6 +40,9 @@
           <p class="main-promo__description">Функциональное питание для котов</p>
           <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Образец продукта CATENERGY с курицей" class="main-promo__product" width="276" height="269">
@@ -104,11 +107,17 @@
           </div>
           <p class="example__sum">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
           <picture class="example__upper-wrap">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
             <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография полного кота до похудения" class="example_image example__image--up">
           </picture>
           <picture class="example__lower-wrap">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x,">
             <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
             <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фотография кота после похудения" class="example_image example_image--below">
@@ -130,6 +139,9 @@
           </div>
           <div>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map">
@@ -140,25 +152,28 @@
       <footer class="site-footer">
         <div class="site-footer__logo">
           <a class="site-footer__link">
-            <img src="img/logo-footer.svg" alt="CATENERGY" class="site-footer__logo-text">
+            <svg class="site-footer__logo-text" area-label="CATENERGY" width="128" height="24.1"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
           </a>
         </div>
         <div class="site-footer__social social-networks">
           <ul class="social-networks__list">
             <li class="social-networks__item">
-              <a href="https://vk.com" class="social-networks__link social-networks__link--vk">
+              <a href="https://vk.com" class="social-networks__link">
+                <svg class="social-networks__vk" area-label="VK" width="22" height="12"><use xlink:href="img/sprite.svg#logo-vk"></use></svg>
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="social-networks__item">
-              <a href="https://instagram.com" class="social-networks__link social-networks__link--instagram">
+              <a href="https://instagram.com" class="social-networks__link">
+                <svg class="social-networks__instagram" area-label="instagram" width="16" height="16.1"><use xlink:href="img/sprite.svg#logo-instagram"></use></svg>
                 <span class="visually-hidden">
                   Instagram
                 </span>
               </a>
             </li>
             <li class="social-networks__item">
-              <a href="https://facebook.com" class="social-networks__link social-networks__link--fb">
+              <a href="https://facebook.com" class="social-networks__link">
+                <svg class="social-networks__fb" area-label="instagram" width="10" height="19"><use xlink:href="img/sprite.svg#logo-fb"></use></svg>
                 <span class="visually-hidden">
                   Facebook
                 </span>
@@ -168,8 +183,10 @@
         </div>
         <div class="site-footer__copyright">
           <a href="https://htmlacademy.ru" class="site-footer__copyright-link">HTMLAcademy</a>
-          <a href="https://htmlacademy.ru" class="site-footer__copyright-logo">
+          <a href="https://htmlacademy.ru">
             <span class="visually-hidden">HTML Academy</span>
+            <svg class="site-footer__academy-logo" width="40" height="40"><use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>
