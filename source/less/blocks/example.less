@@ -250,7 +250,13 @@
   align-self: center;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     align-self: auto;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: @example-line;
+    border: none;
   }
 }
 
@@ -273,4 +279,17 @@
   border-radius: 3px;
   margin-top: 4px;
   margin-left: 6px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    bottom: -250%;
+    left: 46%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 1px 13px @white;
+    border: solid 1px @ligt-grey-line;
+    background-color: @leaf;
+  }
 }
