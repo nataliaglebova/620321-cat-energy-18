@@ -31,7 +31,7 @@
     width: 100%;
     padding-left: 37px;
     border: none;
-    margin-bottom: 43px;
+    margin-bottom: 45px;
     margin-top: 50px;
   }
 
@@ -47,24 +47,37 @@
     width: 53px;
     height: 3px;
     position: absolute;
-    top: 15px;
+    top: 13px;
     right: 0;
 
     @media (min-width: @tablet-width) {
-      margin-top: 60px;
-      width: 328px;
-      top: -30px;
+      width: 48%;
+      left: 58%;
+      top: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 78.44%;
+      left: 28.8%;
+      top: 21px;
     }
   }
 
   &::before {
-    content: "";
-    background-color: @leaf;
-    width: 20px;
-    height: 3px;
-    position: absolute;
-    top: 20px;
-    left: -10px;
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: @leaf;
+      width: 30px;
+      height: 3px;
+      top: 22px;
+      left: -31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 5.73%;
+      left: -9%;
+    }
   }
 }
 

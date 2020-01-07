@@ -1,17 +1,10 @@
 (function () {
   'use strict';
 
-  var menuOpenButton = document.querySelector('.site-header__menu-spoiler');
-  var menuList = document.querySelector('.site-navigation');
-  var onMenuOpenButtonClick = function () {
-    if(menuList.style.display=== 'none'){
-    menuList.style.display='block';
-} else {
-    menuList.style.display='none';
-};
-};
-
-  menuOpenButton.addEventListener('mousedown', onMenuOpenButtonClick);
+  var sliderButton = document.querySelector(".example__progress-line");
+  var beforePhoto = document.querySelector(".example__image--up");
+  var afterPhoto = document.querySelector(".example__image--below");
+  var wrapper = document.querySelector(".example__wrapper");
   var EFFECT_MAX_SCALE = 411; // px
   var effectPin= document.querySelector('.example__progress-line');
 
@@ -32,11 +25,15 @@
       };
       if ((effectPin.offsetLeft - shift.x) < 0) {
         effectPin.style.left = 0 + 'px';
+        beforePhoto.style.clipPath="polygon(0 0,"+ 0 +"% 0,"+ 0 +"% 100%, 0 100%)";
+
       } else {
         if ((effectPin.offsetLeft - shift.x) > EFFECT_MAX_SCALE) {
           effectPin.style.left = EFFECT_MAX_SCALE + 'px';
+          beforePhoto.style.clipPath="polygon(0 0,"+ 100 +"% 0,"+ 100 +"% 100%, 0 100%)";
         } else {
           effectPin.style.left = (effectPin.offsetLeft - shift.x) + 'px';
+          beforePhoto.style.clipPath="polygon(0 0,"+ ((effectPin.offsetLeft - shift.x) + 155) +"px 0,"+ ((effectPin.offsetLeft - shift.x) + 155) +"px 100%, 0 100%)";
         }
       }
     };

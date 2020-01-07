@@ -1,3 +1,49 @@
+/*mixins*/
+.advantages-icons(@url, @url-retina) {
+  content: "";
+  position: absolute;
+  background-color: @leaf;
+  width: 60px;
+  height: 60px;
+  background-image: @url;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -5px;
+  top: 0;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: @url-retina;
+    background-size: 60px 60px;
+  }
+}
+
+.advantages-icons-tablet(@url, @url-retina) {
+  content: "";
+  position: absolute;
+  background-color: @leaf;
+  width: 80px;
+  height: 80px;
+  background-image: @url;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: @url-retina;
+    background-size: 80px 80px;
+  }
+}
+
+.advantages-numbers(@number) {
+  content: @number;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  .oswald-regular-font(normal, 281px, @light-grey);
+  z-index: -1;
+  top: -47%;
+  left: 33%;
+}
+
 .advantages {
   margin: 0 auto 20px auto;
   width: 320px;
@@ -19,7 +65,7 @@
 .advantages__header {
   .blocks-header-font();
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -28,7 +74,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 
@@ -58,12 +104,12 @@
   text-align: left;
   color: @grey;
   padding-left: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     width: 354px;
     padding-left: 0;
-    margin-bottom: 145px;
+    margin-bottom: 135px;
     margin-right: 30px;
   }
 
@@ -78,7 +124,7 @@
 .advantages__item:nth-child(3),
 .advantages__item:nth-child(4) {
   @media (min-width: @tablet-width) {
-    margin-bottom: 114px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,6 +137,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    line-height: 1.5;
     margin-top: 110px;
     font-size: 16px;
     padding-right: 100px;
@@ -100,41 +147,6 @@
     padding-right: 0;
     line-height: 1.5;
     margin-top: 108px;
-  }
-}
-
-/*mixins*/
-.advantages-icons(@url, @url-retina) {
-  content: "";
-  position: absolute;
-  background-color: @leaf;
-  width: 60px;
-  height: 60px;
-  background-image: @url;
-  background-position: center;
-  background-repeat: no-repeat;
-  right: -5px;
-  top: -5px;
-
-  @media (min-resolution: @retina-dppx) {
-    background-image: @url-retina;
-    background-size: 60px 60px;
-  }
-}
-
-.advantages-icons-tablet(@url, @url-retina) {
-  content: "";
-  position: absolute;
-  background-color: @leaf;
-  width: 80px;
-  height: 80px;
-  background-image: @url;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: @retina-dppx) {
-    background-image: @url-retina;
-    background-size: 80px 80px;
   }
 }
 
@@ -149,6 +161,16 @@
   }
 }
 
+.advantages__item--leaf::after {
+  @media (min-width: @tablet-width) {
+    .advantages-numbers("1");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+  }
+}
+
 .advantages__item--powder::before {
   .advantages-icons(url("../img/advantage-powder@1x.png"),url("../img/advantage-powder@2x.png"));
   left: 20px;
@@ -157,6 +179,16 @@
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-powder@1x.png"),url("../img/advantage-powder@2x.png"));
     left: 0;
+  }
+}
+
+.advantages__item--powder::after {
+  @media (min-width: @tablet-width) {
+    .advantages-numbers("2");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 47%;
   }
 }
 
@@ -171,6 +203,16 @@
   }
 }
 
+.advantages__item--cutlery::after {
+  @media (min-width: @tablet-width) {
+    .advantages-numbers("3");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 47%;
+  }
+}
+
 .advantages__item--weigher::before {
   .advantages-icons(url("../img/advantage-clock@1x.png"), url("../img/advantage-clock@2x.png"));
   left: 20px;
@@ -179,5 +221,15 @@
   @media (min-width: @tablet-width) {
     .advantages-icons-tablet(url("../img/advantage-clock@1x.png"), url("../img/advantage-clock@2x.png"));
     left: 0;
+  }
+}
+
+.advantages__item--weigher::after {
+  @media (min-width: @tablet-width) {
+    .advantages-numbers("4");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 47%;
   }
 }
