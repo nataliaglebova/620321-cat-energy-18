@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -17,6 +18,30 @@
   }
 }
 
+.contacts::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/map-pin.png");
+  width: 55px;
+  height: 53px;
+  top: 60%;
+  left: 43%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 58%;
+    left: 42%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 37%;
+    left: 69.5%;
+  }
+}
+
 .contacts__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +50,7 @@
     width: 100%;
     justify-content: space-between;
     padding-top: 37px;
-    margin-bottom: 22px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,16 +114,15 @@
 .contacts__map {
   width: 320px;
   height: 363px;
+  vertical-align: top;
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    height: 100%;
+    height: 400px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
-    /*временно для верстки*/
-    height: 400px;
   }
 }
 

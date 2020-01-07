@@ -8,7 +8,7 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     margin-bottom: 30px;
-    padding-top: 65px;
+    padding-top: 67px;
     padding-bottom: 60px;
   }
 
@@ -31,13 +31,13 @@
     font-size: 36px;
     margin-left: 55px;
     margin-right: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 215px;
     margin-right: 0;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 }
 
@@ -80,7 +80,7 @@
     width: 141px;
     height: 194px;
     left: 420px;
-    top: 10px;
+    top: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -105,11 +105,12 @@
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
+    line-height: 1.5;
     font-size: 16px;
     margin-left: 55px;
     margin-right: 320px;
     border: none;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
     margin-top: 0;
   }
 
@@ -130,23 +131,8 @@
   text-decoration: none;
   margin-left: 21px;
 
-  &::after {
-    content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
-    width: 25px;
-    height: 12px;
-    position: absolute;
-    top: 5px;
-    right: -40px;
-
-    @media (min-width: @tablet-width) {
-      top: 8px;
-      right: -40px;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 130px;
-    }
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
   }
 
   @media (min-width: @tablet-width) {
@@ -161,6 +147,39 @@
   }
 }
 
+.program-description__link::after {
+  content: "";
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  right: -35px;
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    right: -45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 130px;
+  }
+}
+
+.program-description__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 34px;
+  right: -50px;
+}
+
+.program-description__link:active::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 34px;
+  right: -50px;
+  opacity: 0.3;
+}
+
 .program-description__header--pro::after {
   content: "";
   background-image: url("../img/icon-cat-pro.svg");
@@ -168,14 +187,14 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  left: -83px;
-  top: 10px;
+  left: -80px;
+  top: 5px;
 
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 113px;
-    left: 360px;
-    top: 65px;
+    left: 358px;
+    top: 68px;
   }
 
   @media (min-width: @desktop-width) {

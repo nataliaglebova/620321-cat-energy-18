@@ -4,13 +4,14 @@
   flex-wrap: wrap;
   width: 320px;
 
+
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
     align-items: baseline;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 62px;
     padding-left: 30px;
   }
@@ -28,6 +29,14 @@
   margin-top: 39px;
   margin-left: 76px;
   margin-bottom: 27px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -73,6 +82,15 @@
   line-height: 1;
   text-align: left;
   color: #444444;
+  margin-right: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -85,6 +103,17 @@
   margin-left: auto;
   margin-top: 10px;
   fill: #666666;
+
+  &:hover {
+    opacity: 0.8;
+    fill: @leaf;
+  }
+
+  &:active,
+  &focus {
+    opacity: 0.6;
+    fill: @leaf;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: 20px;

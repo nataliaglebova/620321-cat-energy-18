@@ -20,16 +20,22 @@
 }
 
 .site-header__logo {
-  width: 192px;
-  height: 40px;
   margin-left: 19px;
   margin-top: 11px;
   margin-bottom: 10px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     height: 70px;
     width: 174px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-left: 30px;
   }
 
@@ -63,4 +69,8 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.site-header__menu-spoiler--no-js {
+  background-image: url("../img/icon-close.svg");
 }
