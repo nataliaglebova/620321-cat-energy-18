@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Oswald Medium";
+  font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Oswald Regular";
+  font-display: swap;
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
     url("../fonts/oswaldregular.woff") format("woff");
 }
@@ -20,6 +22,10 @@
 @tablet-width:768px;
 @desktop-width:1300px;
 @retina-dppx: 1.5dppx;
+
+body {
+  font-family: "Arial", sans-serif;
+}
 
 .visually-hidden {
   position: absolute;
@@ -44,7 +50,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    min-width: 1300px;
+    max-width: 1440px;
+    width: 100%;
   }
 }
 
