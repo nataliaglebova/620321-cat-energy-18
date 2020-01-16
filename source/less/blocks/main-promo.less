@@ -2,7 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 320px;
-  padding-top: 29px;
+  padding-top: 25px;
   margin: 0 auto;
 
   @media (min-resolution: @retina-dppx) {
@@ -21,6 +21,9 @@
     min-width: 1300px;
     max-width: 1440px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to left, @leaf 150%, transparent 150%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
@@ -32,8 +35,16 @@
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 720px 696px;
+      background-size: 650px 696px;
     }
+  }
+}
+
+.main-promo__wrap {
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -54,9 +65,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 190px;
+    margin-left: 120px;
     padding-right: 0;
-    width: 30%;
+    width: 435px;
   }
 }
 
@@ -75,13 +86,13 @@
     color: @black;
     margin-left: 120px;
     align-self: baseline;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 190px;
+    margin-left: 120px;
     font-size: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 }
 
@@ -94,13 +105,13 @@
     width: 709px;
     height: 609px;
     top: 237px;
-    right: 34px;
+    right: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 500px;
-    right: 330px;
+    right: 260px;
     top: 142px;
   }
 }
@@ -120,6 +131,6 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 188px;
-    margin-left: 190px;
+    margin-left: 120px;
   }
 }

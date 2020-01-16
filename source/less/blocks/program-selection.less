@@ -1,3 +1,15 @@
+.program-selection__wrap {
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .program-selection__form {
   display: flex;
   flex-wrap: wrap;
@@ -18,8 +30,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
+    padding-left: 40px;
     margin-top: 55px;
+    margin-bottom: 55px;
   }
 }
 
@@ -39,8 +52,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 22.56%;
-    margin-left: 110px;
+    width: 25%;
+    margin-left: 40px;
     padding: 0;
   }
 }
