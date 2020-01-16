@@ -12,6 +12,10 @@
     url("../fonts/oswaldregular.woff") format("woff");
 }
 
+body {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+}
+
 @white:#ffffff;
 @black:#111111;
 @grey:#444444;
@@ -23,9 +27,6 @@
 @desktop-width:1300px;
 @retina-dppx: 1.5dppx;
 
-body {
-  font-family: "Arial", sans-serif;
-}
 
 .visually-hidden {
   position: absolute;
@@ -44,14 +45,13 @@ body {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1300px;
-    max-width: 1440px;
     width: 100%;
   }
 }

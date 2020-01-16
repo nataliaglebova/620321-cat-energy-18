@@ -10,10 +10,10 @@
   var onMenuOpenButtonClick = function () {
     if(menuList.style.display=== 'none'){
     menuList.style.display='block';
-    menuOpenButton.style.backgroundImage = "url('../img/icon-close.svg')";
+    menuOpenButton.style.backgroundImage = "url('img/icon-close.svg')";
   } else {
     menuList.style.display='none';
-    menuOpenButton.style.backgroundImage = "url('../img/icon-mobile-menu.svg')";
+    menuOpenButton.style.backgroundImage = "url('img/icon-mobile-menu.svg')";
   };
 };
 
